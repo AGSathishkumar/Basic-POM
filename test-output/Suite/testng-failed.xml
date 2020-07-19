@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="chrome(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="Testcases.testcase2">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="drivers"/>
+          <include name="testcase2"/>
+        </methods>
+      </class> <!-- Testcases.testcase2 -->
+      <class name="Testcases.Testcases">
+        <methods>
+          <include name="testcase1"/>
+          <include name="drivers"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- Testcases.Testcases -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
